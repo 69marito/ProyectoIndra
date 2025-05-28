@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos Sostenibles</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+    </head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Eventos Sostenibles</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="eventos.html">Explorar Eventos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero-carousel-fade">
+            <div class="carousel-fade-container">
+                <div class="carousel-fade-slide active">
+                    <img src="images/evento11.jpg" alt="Evento 1: Limpieza de playas">
+                    <div class="hero-content">
+                        <h2>Limpieza de playas públicas.</h2>
+                        <p></p>
+                        <p>Ayuda a limpiar las playas de tu ciudad</p>
+                        <a href="eventos.html" class="btn-primary">Encuentra tu próximo evento</a>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-fade-slide">
+                    <img src="images/evento22.jpg" alt="Evento 2: Limpieza de parques">
+                    <div class="hero-content">
+                        <h2>Limpieza de parques urbanos.</h2>
+                        <p></p>
+                        <p>Juntate con mas personas a recoger los parques urbanos</p>
+                        <a href="eventos.html" class="btn-primary">Conoce más</a>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-fade-slide">
+                    <img src="images/evento33.jpg" alt="Evento 3: Conferencia de Sostenibilidad">
+                    <div class="hero-content">
+                        <h2>Taller de reciclaje.</h2>
+                        <p></p>
+                        <p>Crea utensilios sostenibles reutilizando otros.</p>
+                        <a href="eventos.html" class="btn-primary">Regístrate ahora</a>
+                        <p></p>
+                    </div>
+                </div>
+                <button class="carousel-fade-button prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-fade-button next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+
+                <div class="carousel-fade-dots">
+                    </div>
+            </div>
+        </section>
+
+        <section id="quick-search">
+            <div class="container">
+                <h3>Busca eventos cerca de ti</h3>
+                <form action="eventos.html" method="get">
+                    <input type="text" name="palabra_clave" placeholder="Concierto, taller, mercado..." class="search-input">
+                    <input type="text" name="ubicacion" placeholder="Tu ciudad, región..." class="search-input">
+                    <input type="date" name="fecha" class="search-input">
+                    <button type="submit" class="btn-secondary">Buscar Eventos</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="featured-events-grid">
+            <div class="container">
+                <h2>Próximos Eventos</h2>
+                <div class="event-grid">
+                    <article class="event-card">
+                        <img src="images/evento1.jpg" alt="Festival de Música Eco">
+                        <div class="event-info">
+                            <h3>Limpieza de playas públicas.</h3>
+                            <p class="event-date">1 - 5 de Junio, 2025</p>
+                            <p class="event-location">Playa de Riazor</p>
+                            <p class="event-description">Ayuda a crear un ambiente sostenible en la playa de tu ciudad</p>
+                            <span class="sustainability-badge">♻️ Reciclaje en playas</span>
+                            <a href="detalles_evento-1.html" class="btn-link">Ver detalles</a>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <img src="images/evento2.jpg" alt="Feria de Productos Locales">
+                        <div class="event-info">
+                            <h3>Limpieza de parques urbanos.</h3>
+                            <p class="event-date">Cada Sábado, 10:00 - 14:00</p>
+                            <p class="event-location">Parque de Santa Margarita</p>
+                            <p class="event-description">Ayuda a la limpieza de parques locales</p>
+                            <span class="sustainability-badge">🌱 Reciclaje en parques</span>
+                            <a href="detalles_evento-2.html" class="btn-link">Ver detalles</a>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <img src="images/evento3.jpg" alt="Conferencia de Cambio Climático">
+                        <div class="event-info">
+                            <h3>Taller de reciclaje</h3>
+                            <p class="event-date">25 de Octubre, 2025</p>
+                            <p class="event-location">Plaza del Obelisco, A Coruña</p>
+                            <p class="event-description">Taller público para creación de utensilios sostenibles</p>
+                            <span class="sustainability-badge">🌎 Taller de reciclaje</span>
+                            <a href="detalles_evento-3.html" class="btn-link">Ver detalles</a>
+                        </div>
+                    </article>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank">Facebook</a>
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">Twitter</a>
+                    </div>
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><a href="index.html">Política de Privacidad</a> | <a href="index.html">Términos y Condiciones</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/carousel.js"></script>
+</body>
+</html>
