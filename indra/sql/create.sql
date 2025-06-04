@@ -12,11 +12,13 @@ create table organizadores(
 )
 create table telefonos(
     organizador varchar(30) not null references organizadores(nombre),
-    telefono char(9),
+    telefono char(9) not null check (telefono like '6[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
     primary key(organizador,telefono) 
 )
 create table ubicaciones(
-    nombre varchar(100) not null primary key
+    nombre varchar(100) not null primary key,
+    tipo varchar(20) not null check (tipo in ('telematico','presencial')),
+    localidad varchar(100)
 )
 create table eventos(
     nombre varchar(30) not null primary key,
