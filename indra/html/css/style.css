@@ -1,76 +1,73 @@
 header {
-    background-color: #ffffff; /* Fondo blanco para la cabecera */
-    padding: 20px 0; /* Espaciado interno superior e inferior */
-    border-bottom: 1px solid #eee; /* Línea sutil en la parte inferior */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra suave para un efecto flotante */
-    position: sticky; /* Hace que el header se "pegue" arriba al hacer scroll */
-    top: 0; /* Se pega en la parte superior de la ventana */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header .container {
-    display: flex; /* Usa Flexbox para alinear elementos */
-    justify-content: space-between; /* Distribuye el espacio entre logo y navegación */
-    align-items: center; /* Centra verticalmente los elementos */
-    max-width: 1200px; /* Ancho máximo para el contenido */
-    margin: 0 auto; /* Centra el contenedor */
-    padding: 0 20px; /* Espaciado a los lados para pantallas pequeñas */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Estilos para el logo */
 .logo a {
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #333; /* Color del texto del logo */
+    text-decoration: none;
+    color: #333;
 }
 
 .logo h1 {
-    margin: 0; /* Elimina el margen predeterminado del h1 */
-    font-size: 1.8em; /* Tamaño de fuente para el título del logo */
-    color: #0056b3; /* Un azul distintivo para el título */
-    font-weight: 700; /* Negrita */
+    margin: 0;
+    font-size: 1.8em;
+    color: #0056b3;
+    font-weight: 700;
 }
 
-/* Estilos para la navegación */
 nav ul {
-    list-style: none; /* Elimina los puntos de lista */
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Usa Flexbox para los elementos de la lista */
+    display: flex;
 }
 
 nav ul li {
-    margin-left: 30px; /* Espacio entre los elementos de la navegación */
+    margin-left: 30px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #555; /* Color de texto para los enlaces de navegación */
-    font-weight: 500; /* Semi-negrita */
-    transition: color 0.3s ease; /* Transición suave para el color del texto */
-    font-size: 1.1em; /* Tamaño de fuente para los enlaces */
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 1.1em;
 }
 
 nav ul li a:hover {
-    color: #007bff; /* Color azul al pasar el ratón */
+    color: #007bff;
 }
 
-/* Media Queries para hacer el diseño responsivo */
 @media (max-width: 768px) {
     header .container {
-        flex-direction: column; /* Apila el logo y la navegación en pantallas pequeñas */
+        flex-direction: column;
         text-align: center;
     }
 
     .logo {
-        margin-bottom: 15px; /* Espacio entre el logo y la navegación apilados */
+        margin-bottom: 15px;
     }
 
     nav ul {
-        flex-direction: column; /* Apila los elementos de la navegación */
+        flex-direction: column;
     }
 
     nav ul li {
-        margin: 10px 0; /* Espacio entre los elementos de la navegación apilados */
+        margin: 10px 0;
     }
 }
 
