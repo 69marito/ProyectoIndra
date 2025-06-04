@@ -1,37 +1,4 @@
 header {
-    background-color: #ffffff; /* Fondo blanco para la cabecera */
-    padding: 20px 0; /* Espaciado interno superior e inferior */
-    border-bottom: 1px solid #eee; /* Línea sutil en la parte inferior */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra suave para un efecto flotante */
-    position: sticky; /* Hace que el header se "pegue" arriba al hacer scroll */
-    top: 0; /* Se pega en la parte superior de la ventana */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-}
-
-header .container {
-    display: flex; /* Usa Flexbox para alinear elementos */
-    justify-content: space-between; /* Distribuye el espacio entre logo y navegación */
-    align-items: center; /* Centra verticalmente los elementos */
-    max-width: 1200px; /* Ancho máximo para el contenido */
-    margin: 0 auto; /* Centra el contenedor */
-    padding: 0 20px; /* Espaciado a los lados para pantallas pequeñas */
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px 0;
-    max-width: 1200px; /* Añadido para consistencia */
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #0056b3;
-    margin-bottom: 15px;
-}
-
-/* Estilos para el encabezado (reutilizados) */
-header {
     background-color: #ffffff;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -45,7 +12,22 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+    max-width: 1200px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0056b3;
+    margin-bottom: 15px;
 }
 
 .logo a {
@@ -83,10 +65,9 @@ nav ul li a:hover {
     color: #007bff;
 }
 
-/* Estilos para el botón (reutilizados) */
 .button {
     display: inline-block;
-    background-color: #28a745; /* Color verde para botones de acción */
+    background-color: #28a745;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -94,14 +75,13 @@ nav ul li a:hover {
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s ease;
-    text-decoration: none; /* Asegura que no tenga subrayado si es un <a> */
+    text-decoration: none;
 }
 
 .button:hover {
     background-color: #218838;
 }
 
-/* Estilos para el pie de página (reutilizados) */
 footer {
     background-color: #333;
     color: white;
@@ -110,7 +90,6 @@ footer {
     margin-top: 30px;
 }
 
-/* --- Estilos Específicos de la Página de Explorar Eventos --- */
 .events-listing {
     background-color: #fff;
     padding: 30px;
@@ -134,33 +113,33 @@ footer {
 }
 
 .event-grid {
-    display: grid; /* Usa CSS Grid para un diseño de cuadrícula flexible */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas responsivas */
-    gap: 30px; /* Espacio entre las tarjetas de eventos */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .event-card {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
+    overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Para que el botón quede abajo */
+    justify-content: space-between;
 }
 
 .event-card:hover {
-    transform: translateY(-5px); /* Pequeño levantamiento al pasar el ratón */
+    transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 .event-card img {
     width: 100%;
-    height: 200px; /* Altura fija para las imágenes */
-    object-fit: cover; /* Recorta la imagen para cubrir el área */
+    height: 200px;
+    object-fit: cover;
     border-bottom: 1px solid #eee;
 }
 
@@ -182,15 +161,14 @@ footer {
     color: #555;
     padding: 0 15px;
     margin-bottom: 20px;
-    flex-grow: 1; /* Permite que la descripción ocupe el espacio disponible */
+    flex-grow: 1;
 }
 
 .event-card .button {
-    margin: 0 15px 15px; /* Espacio alrededor del botón */
-    width: calc(100% - 30px); /* Ancho del botón dentro de la tarjeta */
+    margin: 0 15px 15px;
+    width: calc(100% - 30px);
 }
 
-/* Media Queries para responsividad */
 @media (max-width: 768px) {
     .container {
         width: 95%;
@@ -229,10 +207,10 @@ footer {
     }
 
     .event-grid {
-        grid-template-columns: 1fr; /* Una sola columna en móviles */
+        grid-template-columns: 1fr;
     }
 
     .event-card {
-        margin-bottom: 20px; /* Espacio entre tarjetas apiladas */
+        margin-bottom: 20px;
     }
 }
